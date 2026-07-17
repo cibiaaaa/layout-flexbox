@@ -1,45 +1,72 @@
+
 body {
-    background-color: whitesmoke;
     font-family: Arial, sans-serif;
+    background-color: whitesmoke;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: aquamarine;
+    padding: 15px 40px;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.menu li a:hover {
+    color: white;
 }
 
 .container {
     display: flex;
-    justify-content: center; 
-    gap: 30px;               
-    margin-top: 100px;
-    flex-wrap: wrap;         
+    justify-content: center;
+    gap: 25px;
+    margin-top: 50px;
+    flex-wrap: wrap;
 }
 
 .card {
-    width: 300px;
-    padding: 30px;
-    border: 6px solid aquamarine;
+    width: 250px;
+    padding: 20px;
+    border: 3px solid aquamarine;
+    border-radius: 10px;
     background-color: white;
     text-align: center;
-    border-radius: 10px;
 }
 
-img {
+.card img {
     width: 100px;
     border-radius: 50%;
 }
 
-h2 {
+.card h3 {
     margin: 15px 0 10px;
-    color: black;
 }
 
-p {
+.card p {
     color: gray;
+    margin-bottom: 15px;
 }
 
 button {
     background-color: aquamarine;
-    color: black;
-    font-family: sans-serif;
-    padding: 10px 20px;
     border: none;
+    padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
+}
+
+button:hover {
+    background-color: aquamarine;
 }
